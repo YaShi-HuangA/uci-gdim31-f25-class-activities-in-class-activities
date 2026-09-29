@@ -2,6 +2,9 @@
 ## Devlogs
 ### W1
 Write your W1 activity Devlog here.
+1.When the Camera is moved out of the Cat GameObject in the Hierarchy, it is no longer a child of the Cat. When the game runs, the Camera no longer follows the Cat's movement or rotation. This happens because child GameObjects inherit the Transform changes of their parent. Since the Camera is no longer a child of the Cat, it stays in its own position instead of moving with the Cat.
+2.https://yashi-huang.itch.io/2026inclassactivity1
+
 
 ### W2
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
