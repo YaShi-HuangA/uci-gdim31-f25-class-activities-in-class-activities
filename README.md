@@ -8,6 +8,9 @@ Write your W1 activity Devlog here.
 
 ### W2
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
+The r, g, and b variables are floats because RGB color values can have decimal values between 0.0 and 1.0.
+The _bounces variable is an int because the number of bounces is a whole number and does not need decimals.
+The error showed that the line was missing a semicolon (;) at the end of the statement.
 
 ## Open-Source Assets
 ### W1
