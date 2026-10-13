@@ -17,10 +17,11 @@ activity 1 :
 1. `GetResponse`: The parameters are `int friendshipLevel` and `bool knowsSecret`, and the return type is `string` because it returns the character's dialogue response.
 2. `SetLightDimness`: The parameter is `float sanityLevel` (0–100), and the return type is `void` because the method changes the light directly.
 3. `DidPlayerHitBeat`: The parameter is `float keyPressTime`, and the return type is `bool` because it indicates whether the player hit the beat accurately.
+
 Activity 2: Components & Classes Metaphor
 A class is like a blueprint for a house. The blueprint describes what a house can have and do, but it is not itself a house in the scene. A Component is like one actual house built from that blueprint. Member variables are the house’s traits, such as its color or number of floors. Methods are the actions it can perform, such as opening a door or turning on a light. Multiple houses can be built from the same blueprint, just as multiple Components can be created from one class.
-activity3: I think the balls get extremely bright because their color is multiplied by 1.5 every time they collide. The color keeps increasing with each bounce instead of resetting to the original color, which makes the balls look brighter and brighter, especially in the Scene view.
 
+activity3: I think the balls get extremely bright because their color is multiplied by 1.5 every time they collide. The color keeps increasing with each bounce instead of resetting to the original color, which makes the balls look brighter and brighter, especially in the Scene view.
 
 
 ## Open-Source Assets
