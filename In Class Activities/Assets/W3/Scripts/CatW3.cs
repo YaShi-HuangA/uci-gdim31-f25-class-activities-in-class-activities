@@ -98,6 +98,7 @@ public class CatW3 : MonoBehaviour
             
 
             // STEP 2 ---------------------------------------------------------
+            DecreaseHealth();
 
             // STEP 6 ---------------------------------------------------------
             // Write an IF STATEMENT below that does the following:
@@ -110,6 +111,10 @@ public class CatW3 : MonoBehaviour
             
 
             // STEP 6 ---------------------------------------------------------
+            if (_health <= 0 && _destroyCatWhenDead)
+            {
+                DestroyCat();
+            }
         }
     }
 
@@ -129,6 +134,9 @@ public class CatW3 : MonoBehaviour
     private void DecreaseHealth()
     {
         // write Step 3 below this comment!
+        _health--;
+
+        _healthText.text = "health = " + _health;
 
 
         // STEP 5 -------------------------------------------------------------
@@ -138,6 +146,7 @@ public class CatW3 : MonoBehaviour
 
 
         // STEP 5 -------------------------------------------------------------
+        _speechText.text = GetHealthSpeechText();
     }
     // STEP 3 -----------------------------------------------------------------
 
@@ -158,6 +167,17 @@ public class CatW3 : MonoBehaviour
         // put the method body here!
         
     //}
+    private string GetHealthSpeechText()
+    {
+        if (_health < _maxHealth / 2)
+        {
+            return "OH NO!!";
+        }
+        else
+        {
+            return "ouch";
+        }
+    }
     
     // STEP 4 -----------------------------------------------------------------
 
@@ -171,6 +191,7 @@ public class CatW3 : MonoBehaviour
 
 
         // STEP 7 -------------------------------------------------------------
+        _spriteRenderer.color = ball.ballRenderer.color;
     }
     
     // ------------------------------------------------------------------------
