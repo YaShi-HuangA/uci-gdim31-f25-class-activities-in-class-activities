@@ -23,6 +23,13 @@ A class is like a blueprint for a house. The blueprint describes what a house ca
 
 activity3: I think the balls get extremely bright because their color is multiplied by 1.5 every time they collide. The color keeps increasing with each bounce instead of resetting to the original color, which makes the balls look brighter and brighter, especially in the Scene view.
 
+### W4
+Table #3
+1. I added Rigidbody components to the Cat and SoccerBall so Unity could apply physics to them. I checked Is Trigger on the Goal's Box Collider so the ball could pass through the goal area and `SoccerBall.OnTriggerEnter` could detect it. The ball's Sphere Collider and the Cat's Capsule Collider remain non-trigger colliders so they can physically interact with the scene.
+
+2. At first, I couldn't see the timer because I was looking at the Scene view. After switching to the Game view, I confirmed that “time since last goal” was visible. I adjusted its placement so it was easier to see near the bottom of the screen.
+
+
 
 ## Open-Source Assets
 ### W1
