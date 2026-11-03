@@ -29,6 +29,21 @@ Table #3
 
 2. At first, I couldn't see the timer because I was looking at the Scene view. After switching to the Game view, I confirmed that “time since last goal” was visible. I adjusted its placement so it was easier to see near the bottom of the screen.
 
+### W5
+### DeerW5 — Design Notes
+
+1. Member variables
+The class needs a `Transform` for the target and a `NavMeshAgent` for the deer. I will use `[SerializeField]` so I can assign the target in the Inspector.
+
+2. Methods
+I only need `Start()` because the deer only needs to set its destination once when the game starts. `Update()` is not needed.
+
+3. What the method does
+`Start()` gets the NavMeshAgent using `GetComponent<NavMeshAgent>()` and uses `SetDestination()` to make the deer walk toward the target.
+
+Testing plan:
+Attach the script to Deer, drag the red mushroom into the Target field, and press Play to see if the deer moves toward it.
+
 
 
 ## Open-Source Assets
